@@ -238,7 +238,7 @@
 
           <aside class="l-sidebar">
             <form id="searchContacts" class="l-search localSearch formSearch">
-              <input class="form-input-search" type="search" placeholder="Search">
+              <input class="form-input-search" type="search" placeholder="buscar">
               <button class="clean-button" type="reset">âœ•</button>
             </form>
 
@@ -267,19 +267,19 @@
 
               <section id="searchList" class="l-list is-hidden">
                 <header class="l-list-header">
-                  <h3 class="l-list-header-title">Search results</h3>
+                  <h3 class="l-list-header-title">Resultados</h3>
                 </header>
                 <ul class="list list_contextmenu"></ul>
                 <div class="note l-flexbox l-flexbox_column">
                   <span class="text text_alert">Sorry...</span>
                   <span class="text">No results found</span>
                 </div>
-                <button class="search btn btn_search">Global Search</button>
+                <button class="search btn btn_search">Búsqueda global</button>
               </section>
 
               <section id="emptyList" class="l-list note l-flexbox l-flexbox_column is-hidden">
                 <span class="text text_alert">Oops...</span>
-                <span class="text">You don't have any contacts.</span>
+                <span class="text">No tienes contactos.</span>
               </section>
             </div>
           </aside>
@@ -287,10 +287,10 @@
           <div class="l-workspace-wrap">
             <section id="capBox" class="l-workspace l-flexbox">
               <div class="l-cap l-flexbox l-flexbox_column">
-                <span class="cap-text">Is anybody here?</span>
+                <span class="cap-text">Hay alguien alli?</span>
                 <img class="cap-anybody" src="images/anybody.png" alt="QuickBlox anybody">
-                <button class="search btn btn_add btn_invite"><img class="btn-icon btn-icon_invite" src="images/icon-invite.svg" alt="invite">Search for Friends</button>
-                <!-- <button class="btn btn_add btn_share"><img class="btn-icon btn-icon_share" src="images/icon-fb.svg" alt="fb">Share on Facebook</button> -->
+                <button class="search btn btn_add btn_invite"><img class="btn-icon btn-icon_invite" src="images/icon-invite.svg" alt="invite">Buscar contactos</button>
+                <!-- <button class="btn btn_add btn_share"><img class="btn-icon btn-icon_share" src="images/icon-fb.svg" alt="fb">Compartir en Facebook</button> -->
               </div>
             </section>
 
@@ -382,7 +382,7 @@
 
     <section id="popupDisconnect" class="popup popup_discon is-open j-disconnect">
       <div class="popup-alert l-flexbox_inline l-flexbox_flexcenter">
-        <span class="alert alert_discon"><b>Not Connected.</b> Connecting...</span>
+        <span class="alert alert_discon"><b>Desconectado.</b> Conectando...</span>
       </div>
     </section>
 
@@ -397,8 +397,8 @@
 
     <section id="popupGeoInfo" class="popup popup_geo_info j-geoInfo">
       <span class="alert alert_geo_info">
-        <b>Your location can't be detected.</b>
-        <br>Please enable your location in browser settings and refresh current page after that.
+        <b>Su lugar no se puede detectar.</b>
+        <br>Por favor habilite la detección geográfica en su navegador y refresque la página.
       </span>
     </section>
 
@@ -428,17 +428,17 @@
 
     <section id="popupLogout" class="popup popup_logout is-open">
       <div class="popup-alert l-flexbox_inline l-flexbox_flexcenter">
-        <span class="alert alert_logout">Are you sure<br>you want to log out?</span>
+        <span class="alert alert_logout">Está seguro<br>que quiere salir?</span>
       </div>
       <div class="popup-controls">
-        <a class="popup-control-button popup-control-button_cancel" href="#">Cancel</a>
+        <a class="popup-control-button popup-control-button_cancel" href="#">Cancelar</a>
         <a id="logoutConfirm" class="popup-control-button popup-control-button_ok" href="#">Ok</a>
       </div>
     </section>
 
     <section id="popupImport" class="popup popup_import is-open">
       <div class="popup-alert l-flexbox_inline l-flexbox_flexcenter">
-        <span class="alert alert_import">Your Facebook friends who have<br>a Q-municate account were successfully<br>added to your contacts</span>
+        <span class="alert alert_import">Sus contactos de Facebook fueron agregados exitosamente a bim</span>
       </div>
       <div class="popup-controls">
         <a class="popup-control-button popup-control-button_ok" href="#">Got it</a>
@@ -447,37 +447,37 @@
 
     <section id="popupDelete" class="popup popup_delete is-open">
       <div class="popup-alert l-flexbox_inline l-flexbox_flexcenter">
-        <span class="alert alert_delete">Delete contact?</span>
+        <span class="alert alert_delete">Borrar contacto?</span>
       </div>
       <div class="popup-controls">
-        <a class="popup-control-button popup-control-button_cancel" href="#">Cancel</a>
+        <a class="popup-control-button popup-control-button_cancel" href="#">Cancelar</a>
         <a id="deleteConfirm" class="popup-control-button popup-control-button_ok" href="#">Ok</a>
       </div>
     </section>
 
     <section id="popupLeave" class="popup popup_leave is-open">
       <div class="popup-alert l-flexbox_inline l-flexbox_flexcenter">
-        <span class="alert alert_logout">Are you sure<br>you want to leave the group chat?</span>
+        <span class="alert alert_logout">Está seguro<br>de querer abandonar la sesión?</span>
       </div>
       <div class="popup-controls">
-        <a class="popup-control-button popup-control-button_cancel" href="#">Cancel</a>
+        <a class="popup-control-button popup-control-button_cancel" href="#">Cancelar</a>
         <a id="leaveConfirm" class="popup-control-button popup-control-button_ok" href="#">Ok</a>
       </div>
     </section>
 
     <section id="popupSearch" class="popup popup_search">
       <header class="popup-header">
-        <h3>Global Search</h3>
+        <h3>Busqueda Global</h3>
       </header>
       <form id="globalSearch" class="popup-form formSearch" action="#">
-        <input class="form-input-search" type="search" placeholder="Search" autofocus>
+        <input class="form-input-search" type="search" placeholder="Buscar" autofocus>
         <button class="clean-button" type="reset">âœ•</button>
       </form>
       <ul class="popup-elem list list_contacts"></ul>
       <div class="popup-elem note l-flexbox l-flexbox_column">
-        <span class="text text_alert">Sorry...</span>
-        <span class="text not_found">No results found</span>
-        <span class="text short_length is-hidden">Name must be more than 2 characters</span>
+        <span class="text text_alert">Lo siento...</span>
+        <span class="text not_found">No se encontraron resultados</span>
+        <span class="text short_length is-hidden">El nombre debe tener al menos dos letras</span>
       </div>
     </section>
 
@@ -492,23 +492,23 @@
       <div class="popup-content">
         <ul class="list list_contacts scrollbarContacts"></ul>
         <div class="note l-flexbox l-flexbox_column">
-          <span class="text text_alert">Sorry...</span>
-          <span class="text">No results found</span>
+          <span class="text text_alert">Lo siento...</span>
+          <span class="text">No se encontraron resultados</span>
         </div>
       </div>
       <div class="popup-nofriends l-flexbox is-hidden">
         <div class="l-cap l-cap_contacts l-flexbox l-flexbox_column">
-          <span class="cap-text cap-text_contacts">It's a little lonely<br>over here</span>
+          <span class="cap-text cap-text_contacts">Esta un poco solitario por aquí</span>
           <button class="search btn btn_invite btn_invite_contacts">
             <img class="btn-icon btn-icon_invite btn-icon_invite_contacts" src="images/icon-invite.svg" alt="invite">
-            Search for Friends
+            Buscar contactos
           </button>
         </div>
       </div>
       <footer class="popup-footer">
-        <button class="btn btn_popup btn_popup_private">Create a chat</button>
-        <button class="btn btn_popup btn_popup_group">Create group chat</button>
-        <button class="btn btn_popup btn_popup_add">Add to chat</button>
+        <button class="btn btn_popup btn_popup_private">Crear un chat</button>
+        <button class="btn btn_popup btn_popup_group">Crear un grupo de chat</button>
+        <button class="btn btn_popup btn_popup_add">Agregar el botón</button>
       </footer>
     </section>
   </div>
